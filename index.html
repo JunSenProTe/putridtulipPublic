@@ -39,6 +39,23 @@
       backdrop-filter: blur(6px);
       z-index: 10;
     }
+
+    .sigil {
+  position: fixed;
+  top: -5vh;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.3); /* faint, ghostly */
+  pointer-events: none; /* doesn’t block clicks */
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+    
     nav a {
       color: #ddd;
       margin: 0 1rem;
